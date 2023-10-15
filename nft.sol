@@ -5,6 +5,7 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract NFT is ERC721, Ownable(msg.sender) {
+    uint256 public mintPrice = 0.05 ether;
     struct certificate {
         string name;
         string content;
